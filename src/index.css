@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lucida+Console&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Liberation+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DejaVu+Sans+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+New&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Consolas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PragmataPro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Terminus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iosevka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Droid+Sans+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Input+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050505;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Subtle Grid Pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+
+/* Premium Glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.08); /* Increased from 0.03 */
+  backdrop-filter: blur(16px); /* Increased from 12px */
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Increased from 0.1 */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6); /* Deeper shadow */
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #6B5ED9 0%, #4A3DB5 100%);
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(107, 94, 217, 0.4);
+}
+
+.codeBox {
+  border: none;
+  box-shadow: 0 0 0 1px var(--frame-highlight-border),
+    0 0 0 1.5px var(--frame-shadow-border), 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background: var(--frame-background);
+  --frame-background: rgba(0, 0, 0, 0.75);
+  --frame-control-color: hsla(0, 0%, 100%, 0.2);
+  --frame-title-placeholder-color: hsla(0, 0%, 100%, 0.3);
+  --frame-title-color: hsla(0, 0%, 100%, 0.6);
+  --frame-shadow-border: rgba(0, 0, 0, 0.8);
+  --frame-highlight-border: hsla(0, 0%, 100%, 0.3);
+}
+
+.codeBox-light {
+  border-radius: 10px;
+  background: var(--frame-background);
+  border: none;
+  box-shadow: 0 0 0 1px var(--frame-highlight-border),
+    0 0 0 1.5px var(--frame-shadow-border), 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  --background: #0d0d0d;
+  --panel-background: #191919;
+  --panel-border: 1px solid hsla(0, 0%, 100%, 0.2);
+  --panel-text-color: hsla(0, 0%, 100%, 0.4);
+  --panel-dropdown-border: hsla(0, 0%, 100%, 0.1);
+  --panel-padding-selected: #fff;
+  --frame-background: hsla(0, 0%, 100%, 0.75);
+  --frame-control-color: rgba(0, 0, 0, 0.2);
+  --frame-title-placeholder-color: rgba(0, 0, 0, 0.3);
+  --frame-title-color: rgba(0, 0, 0, 0.6);
+  --frame-shadow-border: rgba(0, 0, 0, 0.1);
+  --frame-highlight-border: hsla(0, 0%, 100%, 0.75);
+}
+
+.smallBtn {
+  background-color: var(--frame-control-color);
+  --frame-background: rgba(0, 0, 0, 0.75);
+  --frame-control-color: hsla(0, 0%, 100%, 0.2);
+  --frame-title-placeholder-color: hsla(0, 0%, 100%, 0.3);
+  --frame-title-color: hsla(0, 0%, 100%, 0.6);
+  --frame-shadow-border: rgba(0, 0, 0, 0.8);
+  --frame-highlight-border: hsla(0, 0%, 100%, 0.3);
+}
+
+.smallBtn-light {
+  background-color: var(--frame-control-color);
+  --frame-background: rgba(0, 0, 0, 0.75);
+  --frame-control-color: rgba(0, 0, 0, 0.2);
+}
+
+.editable-title {
+  border: none;
+}
+
+.editable-title:focus {
+  outline: none;
+}
+
+.temp {
+  display: flex;
+  max-height: unset;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+.popup-transition-enter {
+  opacity: 0;
+}
+
+.popup-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.popup-transition-exit {
+  opacity: 1;
+}
+
+.popup-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
